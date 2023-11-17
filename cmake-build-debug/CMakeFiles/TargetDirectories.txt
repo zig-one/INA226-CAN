@@ -1,0 +1,3 @@
+/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles/INA226.elf.dir
+/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles/rebuild_cache.dir
