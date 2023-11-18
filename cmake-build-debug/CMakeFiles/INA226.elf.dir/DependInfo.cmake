@@ -28,10 +28,12 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"
   "/home/luxingyu/workstation/INA226/INA226/User/ina226"
   "/home/luxingyu/workstation/INA226/INA226/User/main"
+  "/home/luxingyu/workstation/INA226/INA226/User/can"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/luxingyu/workstation/INA226/INA226/Core/Src/can.c" "CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/gpio.c" "CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/i2c.c" "CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/main.c" "CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj.d"
@@ -40,7 +42,10 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/syscalls.c" "CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/sysmem.c" "CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Core/Src/system_stm32f1xx.c" "CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c" "CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c" "CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d"
@@ -54,6 +59,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp" "CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj" "gcc" "CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp" "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj" "gcc" "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp" "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj" "gcc" "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj.d"
   )

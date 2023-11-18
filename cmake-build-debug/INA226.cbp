@@ -34,6 +34,7 @@
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/ina226"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/main"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/can"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -65,6 +66,7 @@
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/ina226"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/main"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/can"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -100,7 +102,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/can.h.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/gpio.h.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/i2c.h.bak">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/main.h.bak">
@@ -110,6 +118,12 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/stm32f1xx_it.h.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/usart.h.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/can.h">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/gpio.h">
@@ -127,7 +141,19 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/stm32f1xx_it.h">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/tim.h">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/usart.h">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/can.c.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/gpio.c.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/i2c.c.bak">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/main.c.bak">
@@ -146,6 +172,12 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/system_stm32f1xx.c.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/usart.c.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/can.c">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/gpio.c">
@@ -170,6 +202,12 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/system_stm32f1xx.c">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Startup/startup_stm32f103c8tx.s">
@@ -259,6 +297,9 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h">
 			<Option target="INA226.elf"/>
 		</Unit>
@@ -304,6 +345,9 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_bus.h">
 			<Option target="INA226.elf"/>
 		</Unit>
@@ -331,6 +375,12 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_system.h">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_tim.h">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_usart.h">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_ll_utils.h">
 			<Option target="INA226.elf"/>
 		</Unit>
@@ -338,6 +388,9 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c">
@@ -379,7 +432,16 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/STM32F103C8TX_FLASH.ld">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/can/user_can.h">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp">

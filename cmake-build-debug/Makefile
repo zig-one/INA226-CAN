@@ -129,6 +129,30 @@ INA226.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/build
 .PHONY : INA226.elf/fast
 
+Core/Src/can.obj: Core/Src/can.c.obj
+.PHONY : Core/Src/can.obj
+
+# target to build an object file
+Core/Src/can.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj
+.PHONY : Core/Src/can.c.obj
+
+Core/Src/can.i: Core/Src/can.c.i
+.PHONY : Core/Src/can.i
+
+# target to preprocess a source file
+Core/Src/can.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/can.c.i
+.PHONY : Core/Src/can.c.i
+
+Core/Src/can.s: Core/Src/can.c.s
+.PHONY : Core/Src/can.s
+
+# target to generate assembly for a file
+Core/Src/can.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/can.c.s
+.PHONY : Core/Src/can.c.s
+
 Core/Src/gpio.obj: Core/Src/gpio.c.obj
 .PHONY : Core/Src/gpio.obj
 
@@ -321,6 +345,54 @@ Core/Src/system_stm32f1xx.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.s
 .PHONY : Core/Src/system_stm32f1xx.c.s
 
+Core/Src/tim.obj: Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.obj
+
+# target to build an object file
+Core/Src/tim.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj
+.PHONY : Core/Src/tim.c.obj
+
+Core/Src/tim.i: Core/Src/tim.c.i
+.PHONY : Core/Src/tim.i
+
+# target to preprocess a source file
+Core/Src/tim.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/tim.c.i
+.PHONY : Core/Src/tim.c.i
+
+Core/Src/tim.s: Core/Src/tim.c.s
+.PHONY : Core/Src/tim.s
+
+# target to generate assembly for a file
+Core/Src/tim.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/tim.c.s
+.PHONY : Core/Src/tim.c.s
+
+Core/Src/usart.obj: Core/Src/usart.c.obj
+.PHONY : Core/Src/usart.obj
+
+# target to build an object file
+Core/Src/usart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj
+.PHONY : Core/Src/usart.c.obj
+
+Core/Src/usart.i: Core/Src/usart.c.i
+.PHONY : Core/Src/usart.i
+
+# target to preprocess a source file
+Core/Src/usart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/usart.c.i
+.PHONY : Core/Src/usart.c.i
+
+Core/Src/usart.s: Core/Src/usart.c.s
+.PHONY : Core/Src/usart.s
+
+# target to generate assembly for a file
+Core/Src/usart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Core/Src/usart.c.s
+.PHONY : Core/Src/usart.c.s
+
 Core/Startup/startup_stm32f103c8tx.obj: Core/Startup/startup_stm32f103c8tx.s.obj
 .PHONY : Core/Startup/startup_stm32f103c8tx.obj
 
@@ -352,6 +424,30 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s: Drivers/STM32F1xx_HAL_Driver/S
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s
 
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj
@@ -665,6 +761,54 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s: Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+.PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+User/can/user_can.obj: User/can/user_can.cpp.obj
+.PHONY : User/can/user_can.obj
+
+# target to build an object file
+User/can/user_can.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj
+.PHONY : User/can/user_can.cpp.obj
+
+User/can/user_can.i: User/can/user_can.cpp.i
+.PHONY : User/can/user_can.i
+
+# target to preprocess a source file
+User/can/user_can.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.i
+.PHONY : User/can/user_can.cpp.i
+
+User/can/user_can.s: User/can/user_can.cpp.s
+.PHONY : User/can/user_can.s
+
+# target to generate assembly for a file
+User/can/user_can.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.s
+.PHONY : User/can/user_can.cpp.s
+
 User/ina226/ina226.obj: User/ina226/ina226.cpp.obj
 .PHONY : User/ina226/ina226.obj
 
@@ -722,6 +866,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... INA226.elf"
+	@echo "... Core/Src/can.obj"
+	@echo "... Core/Src/can.i"
+	@echo "... Core/Src/can.s"
 	@echo "... Core/Src/gpio.obj"
 	@echo "... Core/Src/gpio.i"
 	@echo "... Core/Src/gpio.s"
@@ -746,10 +893,19 @@ help:
 	@echo "... Core/Src/system_stm32f1xx.obj"
 	@echo "... Core/Src/system_stm32f1xx.i"
 	@echo "... Core/Src/system_stm32f1xx.s"
+	@echo "... Core/Src/tim.obj"
+	@echo "... Core/Src/tim.i"
+	@echo "... Core/Src/tim.s"
+	@echo "... Core/Src/usart.obj"
+	@echo "... Core/Src/usart.i"
+	@echo "... Core/Src/usart.s"
 	@echo "... Core/Startup/startup_stm32f103c8tx.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.s"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.s"
@@ -789,6 +945,12 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.obj"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.i"
+	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.s"
+	@echo "... User/can/user_can.obj"
+	@echo "... User/can/user_can.i"
+	@echo "... User/can/user_can.s"
 	@echo "... User/ina226/ina226.obj"
 	@echo "... User/ina226/ina226.i"
 	@echo "... User/ina226/ina226.s"

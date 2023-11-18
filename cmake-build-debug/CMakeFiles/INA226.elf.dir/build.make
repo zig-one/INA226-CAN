@@ -69,10 +69,24 @@ include CMakeFiles/INA226.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/INA226.elf.dir/flags.make
 
+CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/can.c
+CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/can.c
+
+CMakeFiles/INA226.elf.dir/Core/Src/can.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/INA226.elf.dir/Core/Src/can.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/Core/Src/can.c > CMakeFiles/INA226.elf.dir/Core/Src/can.c.i
+
+CMakeFiles/INA226.elf.dir/Core/Src/can.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Core/Src/can.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Core/Src/can.c -o CMakeFiles/INA226.elf.dir/Core/Src/can.c.s
+
 CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/gpio.c
 CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/gpio.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/i2c.c
 CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/i2c.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/main.c
 CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/main.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/main.c.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/stm32f1xx_hal_msp.c
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/stm32f1xx_hal_msp.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_hal_msp.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/stm32f1xx_it.c
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/stm32f1xx_it.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/syscalls.c
 CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/syscalls.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/sysmem.c
 CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/sysmem.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/system_stm32f1xx.c
 CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/system_stm32f1xx.c
 
 CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.i: cmake_force
@@ -181,9 +195,37 @@ CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Core/Src/system_stm32f1xx.c -o CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.s
 
+CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c
+CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c
+
+CMakeFiles/INA226.elf.dir/Core/Src/tim.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/INA226.elf.dir/Core/Src/tim.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c > CMakeFiles/INA226.elf.dir/Core/Src/tim.c.i
+
+CMakeFiles/INA226.elf.dir/Core/Src/tim.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Core/Src/tim.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Core/Src/tim.c -o CMakeFiles/INA226.elf.dir/Core/Src/tim.c.s
+
+CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj: /home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c
+CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj -MF CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj.d -o CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c
+
+CMakeFiles/INA226.elf.dir/Core/Src/usart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/INA226.elf.dir/Core/Src/usart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c > CMakeFiles/INA226.elf.dir/Core/Src/usart.c.i
+
+CMakeFiles/INA226.elf.dir/Core/Src/usart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Core/Src/usart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Core/Src/usart.c -o CMakeFiles/INA226.elf.dir/Core/Src/usart.c.s
+
 CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj: /home/luxingyu/workstation/INA226/INA226/Core/Startup/startup_stm32f103c8tx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building ASM object CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building ASM object CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj"
 	/usr/bin/arm-none-eabi-gcc $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj -c /home/luxingyu/workstation/INA226/INA226/Core/Startup/startup_stm32f103c8tx.s
 
 CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.i: cmake_force
@@ -197,7 +239,7 @@ CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.s: cmake_force
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.i: cmake_force
@@ -208,10 +250,24 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s: cm
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.s
 
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c
+
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c > CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.i
+
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.s
+
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.i: cmake_force
@@ -225,7 +281,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.i: cmake_force
@@ -239,7 +295,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.s
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.i: cmake_force
@@ -253,7 +309,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c.i: cmake_force
@@ -267,7 +323,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c.i: cmake_force
@@ -281,7 +337,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_e
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.i: cmake_force
@@ -295,7 +351,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c.
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c.i: cmake_force
@@ -309,7 +365,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.i: cmake_force
@@ -323,7 +379,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c.s
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.i: cmake_force
@@ -337,7 +393,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c.s
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.i: cmake_force
@@ -351,7 +407,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.s
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.i: cmake_force
@@ -365,7 +421,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.i: cmake_force
@@ -379,7 +435,7 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.s
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c
 
 CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.i: cmake_force
@@ -390,10 +446,38 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -MF CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj.d -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj -c /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c
+
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c > CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.i
+
+CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s"
+	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.s
+
+CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj: /home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp
+CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj -MF CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj.d -o CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj -c /home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp
+
+CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp > CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.i
+
+CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/User/can/user_can.cpp -o CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.s
+
 CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp
 CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj -MF CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj.d -o CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj -c /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp
 
 CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.i: cmake_force
@@ -407,7 +491,7 @@ CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.s: cmake_force
 CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: CMakeFiles/INA226.elf.dir/flags.make
 CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp
 CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj -MF CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj.d -o CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj -c /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp
 
 CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.i: cmake_force
@@ -420,6 +504,7 @@ CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.s: cmake_force
 
 # Object files for target INA226.elf
 INA226_elf_OBJECTS = \
+"CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj" \
@@ -428,8 +513,11 @@ INA226_elf_OBJECTS = \
 "CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj" \
+"CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj" \
+"CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj" \
 "CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj" \
+"CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj" \
@@ -443,12 +531,15 @@ INA226_elf_OBJECTS = \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
+"CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj" \
+"CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj" \
 "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj" \
 "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
 
 # External object files for target INA226.elf
 INA226_elf_EXTERNAL_OBJECTS =
 
+INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/can.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/i2c.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/main.c.obj
@@ -457,8 +548,11 @@ INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/stm32f1xx_it.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/syscalls.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/sysmem.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/system_stm32f1xx.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/tim.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/Core/Src/usart.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Core/Startup/startup_stm32f103c8tx.s.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_can.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c.obj
@@ -472,11 +566,13 @@ INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/build.make
 INA226.elf: CMakeFiles/INA226.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable INA226.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable INA226.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/INA226.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/luxingyu/workstation/INA226/INA226/cmake-build-debug/INA226.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/luxingyu/workstation/INA226/INA226/cmake-build-debug/INA226.bin"
