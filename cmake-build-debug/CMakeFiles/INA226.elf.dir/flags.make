@@ -3,15 +3,22 @@
 
 # compile ASM with /usr/bin/arm-none-eabi-gcc
 # compile C with /usr/bin/arm-none-eabi-gcc
+# compile CXX with /usr/bin/arm-none-eabi-g++
 ASM_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-ASM_INCLUDES = -I/home/luxingyu/workstation/INA226/INA226/Core/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include
+ASM_INCLUDES = -I/home/luxingyu/workstation/INA226/INA226/Core/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include -I/home/luxingyu/workstation/INA226/INA226/User/ina226 -I/home/luxingyu/workstation/INA226/INA226/User/main
 
-ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
+ASM_FLAGS = -g -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -O0 -g
 
 C_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
 
-C_INCLUDES = -I/home/luxingyu/workstation/INA226/INA226/Core/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include
+C_INCLUDES = -I/home/luxingyu/workstation/INA226/INA226/Core/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include -I/home/luxingyu/workstation/INA226/INA226/User/ina226 -I/home/luxingyu/workstation/INA226/INA226/User/main
 
-C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g
+C_FLAGS = -g -std=gnu11 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -O0 -g
+
+CXX_DEFINES = -DDEBUG -DSTM32F103xB -DUSE_HAL_DRIVER
+
+CXX_INCLUDES = -I/home/luxingyu/workstation/INA226/INA226/Core/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc -I/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include -I/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include -I/home/luxingyu/workstation/INA226/INA226/User/ina226 -I/home/luxingyu/workstation/INA226/INA226/User/main
+
+CXX_FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -mcpu=cortex-m3 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -O0 -g
 

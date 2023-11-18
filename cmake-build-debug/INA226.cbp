@@ -32,6 +32,8 @@
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/ina226"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/main"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -61,6 +63,8 @@
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include"/>
 					<Add directory="/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/ina226"/>
+					<Add directory="/home/luxingyu/workstation/INA226/INA226/User/main"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="/usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -376,6 +380,18 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/STM32F103C8TX_FLASH.ld">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.h">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/User/main/usr_main.h">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/CMakeLists.txt">

@@ -26,6 +26,8 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/Legacy"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Device/ST/STM32F1xx/Include"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/CMSIS/Include"
+  "/home/luxingyu/workstation/INA226/INA226/User/ina226"
+  "/home/luxingyu/workstation/INA226/INA226/User/main"
   )
 
 # The set of dependency files which are needed:
@@ -52,6 +54,8 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d"
   "/home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp" "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj" "gcc" "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj.d"
+  "/home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp" "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj" "gcc" "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

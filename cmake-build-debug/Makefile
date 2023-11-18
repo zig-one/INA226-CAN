@@ -665,6 +665,54 @@ Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+User/ina226/ina226.obj: User/ina226/ina226.cpp.obj
+.PHONY : User/ina226/ina226.obj
+
+# target to build an object file
+User/ina226/ina226.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj
+.PHONY : User/ina226/ina226.cpp.obj
+
+User/ina226/ina226.i: User/ina226/ina226.cpp.i
+.PHONY : User/ina226/ina226.i
+
+# target to preprocess a source file
+User/ina226/ina226.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.i
+.PHONY : User/ina226/ina226.cpp.i
+
+User/ina226/ina226.s: User/ina226/ina226.cpp.s
+.PHONY : User/ina226/ina226.s
+
+# target to generate assembly for a file
+User/ina226/ina226.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.s
+.PHONY : User/ina226/ina226.cpp.s
+
+User/main/usr_main.obj: User/main/usr_main.cpp.obj
+.PHONY : User/main/usr_main.obj
+
+# target to build an object file
+User/main/usr_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj
+.PHONY : User/main/usr_main.cpp.obj
+
+User/main/usr_main.i: User/main/usr_main.cpp.i
+.PHONY : User/main/usr_main.i
+
+# target to preprocess a source file
+User/main/usr_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.i
+.PHONY : User/main/usr_main.cpp.i
+
+User/main/usr_main.s: User/main/usr_main.cpp.s
+.PHONY : User/main/usr_main.s
+
+# target to generate assembly for a file
+User/main/usr_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/INA226.elf.dir/build.make CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.s
+.PHONY : User/main/usr_main.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -741,6 +789,12 @@ help:
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.obj"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.i"
 	@echo "... Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.s"
+	@echo "... User/ina226/ina226.obj"
+	@echo "... User/ina226/ina226.i"
+	@echo "... User/ina226/ina226.s"
+	@echo "... User/main/usr_main.obj"
+	@echo "... User/main/usr_main.i"
+	@echo "... User/main/usr_main.s"
 .PHONY : help
 
 

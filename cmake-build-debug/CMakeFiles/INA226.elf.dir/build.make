@@ -390,6 +390,34 @@ CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s"
 	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c -o CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.s
 
+CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp
+CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj -MF CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj.d -o CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj -c /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp
+
+CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp > CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.i
+
+CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/User/ina226/ina226.cpp -o CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.s
+
+CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: CMakeFiles/INA226.elf.dir/flags.make
+CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp
+CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: CMakeFiles/INA226.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj -MF CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj.d -o CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj -c /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp
+
+CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp > CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.i
+
+CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luxingyu/workstation/INA226/INA226/User/main/usr_main.cpp -o CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.s
+
 # Object files for target INA226.elf
 INA226_elf_OBJECTS = \
 "CMakeFiles/INA226.elf.dir/Core/Src/gpio.c.obj" \
@@ -414,7 +442,9 @@ INA226_elf_OBJECTS = \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj" \
-"CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
+"CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj" \
+"CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj" \
+"CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
 
 # External object files for target INA226.elf
 INA226_elf_EXTERNAL_OBJECTS =
@@ -442,9 +472,11 @@ INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj
+INA226.elf: CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj
 INA226.elf: CMakeFiles/INA226.elf.dir/build.make
 INA226.elf: CMakeFiles/INA226.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable INA226.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luxingyu/workstation/INA226/INA226/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable INA226.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/INA226.elf.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/luxingyu/workstation/INA226/INA226/cmake-build-debug/INA226.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building /home/luxingyu/workstation/INA226/INA226/cmake-build-debug/INA226.bin"

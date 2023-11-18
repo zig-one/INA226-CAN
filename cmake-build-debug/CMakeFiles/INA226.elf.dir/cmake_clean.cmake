@@ -44,11 +44,15 @@ file(REMOVE_RECURSE
   "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c.obj.d"
   "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj"
   "CMakeFiles/INA226.elf.dir/Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c.obj.d"
+  "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj"
+  "CMakeFiles/INA226.elf.dir/User/ina226/ina226.cpp.obj.d"
+  "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj"
+  "CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj.d"
   "INA226.elf"
   "INA226.elf.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang ASM C)
+foreach(lang ASM C CXX)
   include(CMakeFiles/INA226.elf.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()
