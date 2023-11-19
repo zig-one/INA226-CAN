@@ -58,7 +58,31 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
+/** PVD配置函数，从例程直接复制过来，在Main函数中调用配置PVD
+  * @brief  Configures the PVD resources.
+  * @param  None
+  * @retval None
+  */
+void PVD_Config(void)
+{
+    /*##-1- Enable Power Clock #################################################*/
+    __HAL_RCC_PWR_CLK_ENABLE();
 
+    /*##-2- Configure the NVIC for PVD #########################################*/
+    HAL_NVIC_SetPriority(PVD_IRQn, 0, 0);
+    HAL_NVIC_EnableIRQ(PVD_IRQn);
+
+    /* Configure the PVD Level to 3 and generate an interrupt on rising and falling
+       edges(PVD detection level set to 2.5V, refer to the electrical characteristics
+       of you device datasheet for more details) */
+    PWR_PVDTypeDef sConfigPVD;
+    sConfigPVD.PVDLevel = PWR_PVDLEVEL_7;
+    sConfigPVD.Mode = PWR_PVD_MODE_IT_RISING;
+    HAL_PWR_ConfigPVD(&sConfigPVD);
+
+    /* Enable the PVD Output */
+    HAL_PWR_EnablePVD();
+}
 /* USER CODE END 0 */
 
 /**
@@ -82,9 +106,9 @@ int main(void)
 
   /* Configure the system clock */
   SystemClock_Config();
+  PVD_Config();
 
   /* USER CODE BEGIN SysInit */
-
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */

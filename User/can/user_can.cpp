@@ -12,6 +12,8 @@
 /* Includes ------------------------------------------------------------------*/
 
 #include "user_can.h"
+#include "stm32f1xx_hal_can.h"
+#include "stm32f1xx_it.h"
 
 /* Private macros ------------------------------------------------------------*/
 
@@ -29,6 +31,18 @@
 /* Private function declarations ---------------------------------------------*/
 
 /* function prototypes -------------------------------------------------------*/
+
+
+/**
+  * @brief  Error CAN callback.
+  * @param  hcan pointer to a CAN_HandleTypeDef structure that contains
+  *         the configuration information for the specified CAN.
+  * @retval None
+  */
+void HAL_CAN_ErrorCallback()
+{
+    HAL_NVIC_SystemReset();
+}
 
 /**
  * @brief 初始化CAN总线

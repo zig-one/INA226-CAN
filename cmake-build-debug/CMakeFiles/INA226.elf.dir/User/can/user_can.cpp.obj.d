@@ -31,4 +31,5 @@ CMakeFiles/INA226.elf.dir/User/can/user_can.cpp.obj: \
  /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  /home/luxingyu/workstation/INA226/INA226/Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h \
  /home/luxingyu/workstation/INA226/INA226/Core/Inc/can.h \
- /home/luxingyu/workstation/INA226/INA226/Core/Inc/main.h
+ /home/luxingyu/workstation/INA226/INA226/Core/Inc/main.h \
+ /home/luxingyu/workstation/INA226/INA226/Core/Inc/stm32f1xx_it.h

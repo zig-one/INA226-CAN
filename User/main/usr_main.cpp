@@ -4,6 +4,7 @@
 
 #include "usr_main.h"
 #include "user_can.h"
+#include "stm32f1xx_hal_can.h"
 #include "tim.h"
 #include "main.h"
 #include "gpio.h"
@@ -15,8 +16,8 @@
 #include "usart.h"
 #include "cmath"
 using namespace std;
-#define Master_ID 0
-#define My_ID 27
+#define Master_ID 0x23
+#define My_ID 0x23
 
 
 CAN_TxHeaderTypeDef CAN_Tx_Header;
@@ -26,6 +27,24 @@ float current=0;
 float voltage=0;
 float power=0;
 
+
+
+/** PVD (Programmable Votage Detector) ,即可编程电压监测器，PVD中断回调，在这个函数中添加自己需要的断电时处理的内容
+  * @brief  PWR PVD interrupt callback
+  * @retval None
+  */
+void HAL_PWR_PVDCallback(void)
+{
+    /* NOTE : This function Should not be modified, when the callback is needed,
+              the HAL_PWR_PVDCallback could be implemented in the user file
+     */
+    // 断电时点亮一下LED，会亮一瞬间
+    HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,GPIO_PIN_SET);
+    while (1)
+    {
+        ;
+    }
+}
 
 void sendDataByCAN() {
 
@@ -37,11 +56,9 @@ void sendDataByCAN() {
     memcpy(CAN_Tx_Buffer,&current,4);
     memcpy(CAN_Tx_Buffer+4,&voltage,4);
 
-
     HAL_CAN_AddTxMessage(&hcan,&CAN_Tx_Header, CAN_Tx_Buffer, &send_mail_box);
 }
 char buf[100]={65,65,0};
-float a=12.1047,b=12.00;
 
 void float_to_string(float f,char *str, int precision)
 {
@@ -114,13 +131,23 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *_htim)
     {
         static int LED_CNT=0;
         LED_CNT+=1;
-        if(LED_CNT>500)
+        if(LED_CNT%500==0)
         {
             HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+
+        }
+        if(LED_CNT>5000)
+        {
+//            HAL_NVIC_SystemReset();    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET);
+
             LED_CNT=0;
         }
         if(LED_CNT%2==0)
         {
+            if(HAL_CAN_GetError(&hcan)!=HAL_OK)
+            {
+                HAL_NVIC_SystemReset();
+            }
             sendDataByCAN();
             sendDataByUART();
         }
