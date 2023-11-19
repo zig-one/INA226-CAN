@@ -130,4 +130,20 @@ CMakeFiles/INA226.elf.dir/User/main/usr_main.cpp.obj: \
  /usr/include/newlib/sys/errno.h \
  /usr/include/newlib/c++/10.3.1/bits/charconv.h \
  /usr/include/newlib/c++/10.3.1/bits/basic_string.tcc \
- /home/luxingyu/workstation/INA226/INA226/Core/Inc/usart.h
+ /home/luxingyu/workstation/INA226/INA226/Core/Inc/usart.h \
+ /usr/include/newlib/c++/10.3.1/cmath \
+ /usr/include/newlib/c++/10.3.1/math.h /usr/include/newlib/math.h \
+ /usr/include/newlib/c++/10.3.1/bits/specfun.h \
+ /usr/include/newlib/c++/10.3.1/limits \
+ /usr/include/newlib/c++/10.3.1/tr1/gamma.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/special_function_util.h \
+ /usr/include/newlib/c++/10.3.1/tr1/bessel_function.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/beta_function.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/ell_integral.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/exp_integral.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/hypergeometric.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/legendre_function.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/modified_bessel_func.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/poly_hermite.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/poly_laguerre.tcc \
+ /usr/include/newlib/c++/10.3.1/tr1/riemann_zeta.tcc

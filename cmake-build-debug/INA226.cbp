@@ -120,6 +120,9 @@
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/stm32f1xx_it.h.bak">
 			<Option target="INA226.elf"/>
 		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/tim.h.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Inc/Backup/usart.h.bak">
 			<Option target="INA226.elf"/>
 		</Unit>
@@ -172,6 +175,9 @@
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/system_stm32f1xx.c.bak">
+			<Option target="INA226.elf"/>
+		</Unit>
+		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/tim.c.bak">
 			<Option target="INA226.elf"/>
 		</Unit>
 		<Unit filename="/home/luxingyu/workstation/INA226/INA226/Core/Src/Backup/usart.c.bak">
