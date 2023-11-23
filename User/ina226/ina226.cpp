@@ -6,23 +6,37 @@
 
 #include "i2c.h"
 
-uint8_t INA226_SetConfig(uint16_t ConfigWord);
 
-uint8_t INA226_SetCalibrationReg(uint16_t ConfigWord);
 
-uint16_t INA226_GetBusVReg(void);
 
-uint16_t INA226_GetPowerReg(void);
 
-uint16_t INA226_GetCurrentReg(void);
+
+
+/*
+ * 设计目标 电压24V 电流30A
+ * Rshunt 0.002 om
+ * 30A*0.002om=0.06V<0.08192V 安全
+ *
+* 分流电阻最大电压 = 32768 * 0.0000025V = 0.08192V
+    * 设置分流电压转电流转换参数:电阻0.002R，分辨率1mA
+    * 公式1
+    * INA226_CALIB_VAL = 预期最大电流 / 2^15
+    * INA226_CALIB_VAL = 30 / 32768 = 0.000915527 A/bit ,选1ma
+    * 公式2
+    * CAL = 0.00512/(INA226_CALIB_VAL*R)
+    * CAL = 0.00512/(0.001*0.002)=2560 = 0x0a00
+    *
+ */
 
 #define INA226_COM_PORT hi2c1       /*通讯使用的IIC接口*/
 
 #define INA226_ADDRESS      0x80    /*INA226的地址*/
 #define INA226_I2C_TIMEOUT  10      /*IIC通讯超时*/
 
-#define INA226_CALIB_VAL 1024
-#define INA226_CURRENTLSB 0.5F // mA/bit
+#define INA226_CURRENTLSB 1.0F // mA/bit
+#define INA226_CALIB_VAL 0x0a00
+
+
 #define INA226_CURRENTLSB_INV 1/INA226_CURRENTLSB // bit/mA
 #define INA226_POWERLSB_INV 1/(INA226_CURRENTLSB*25) // bit/mW
 
@@ -80,7 +94,12 @@ uint16_t INA226_GetCurrentReg(void);
 #define INA226_RESET_ACTIVE     (1<<15)
 #define INA226_RESET_INACTIVE   (0<<15)
 
-// Mask/Enable Register
+
+
+
+/*
+ * Mask/Enable Register
+ */
 #define INA226_MER_SOL  (1<<15) // Shunt Voltage Over-Voltage
 #define INA226_MER_SUL  (1<<14) // Shunt Voltage Under-Voltage
 #define INA226_MER_BOL  (1<<13) // Bus Voltagee Over-Voltage
@@ -99,24 +118,7 @@ uint16_t INA226_GetCurrentReg(void);
 
 
 
-/*
- * 设计目标 电压24V 电流30A
- * Rshunt 0.002 om
- * 30A*0.002om=0.06V<0.08192V 安全
- *
-* 分流电阻最大电压 = 32768 * 0.0000025V = 0.08192V
-    * 设置分流电压转电流转换参数:电阻0.002R，分辨率1mA
-    * 公式1
-    * Current_LSB = 预期最大电流 / 2^15
-    * Current_LSB = 30 / 32768 = 0.000915527 A/bit ,选1ma
-    * 公式2
-    * CAL = 0.00512/(Current_LSB*R)
-    * CAL = 0.00512/(0.001*0.002)=2560 = 0x0a00
-    *
- */
 
-uint16_t CalibrationRegister =0x0a00;
-float  current_LSB=0.001f;//1ma
 
 void INA226_init(void) {
     /*
@@ -124,9 +126,8 @@ void INA226_init(void) {
     * 总数据转换时间 = 0.322*4 = 1.288ms
     */
     //    INA226_SetConfig(0x45FF);//0b0100 001 010 010 111
-    INA226_SetConfig(INA226_RESET_ACTIVE|INA226_AVG_4|INA226_VBUS_332uS|INA226_VSH_332uS|INA226_MODE_CONT_SHUNT_AND_BUS);//0b0100 001 010 010 111
-
-    INA226_SetCalibrationReg(CalibrationRegister);
+    INA226_SetConfig(0b0100<<12|INA226_AVG_4|INA226_VBUS_332uS|INA226_VSH_332uS|INA226_MODE_CONT_SHUNT_AND_BUS);//0b0100 001 010 010 111
+    INA226_SetCalibrationReg(INA226_CURRENTLSB);
 
 }
 
@@ -153,7 +154,7 @@ float INA226_GetCurrent() {
     float fCurrent;
     regData = INA226_GetCurrentReg();
     if (regData >= 0x8000) regData = 0;
-    fCurrent = (float )regData *(float)CalibrationRegister/2048.0f * current_LSB;/*手册公式3*/
+    fCurrent = (float )regData *(float)INA226_CURRENTLSB/2048.0f * INA226_CALIB_VAL;/*手册公式3*/
     return fCurrent;
 }
 
@@ -166,7 +167,7 @@ float INA226_GetPower() {
     uint16_t regData;
     float fPower;
     regData = INA226_GetPowerReg();
-    fPower = regData * current_LSB*25;/*功率的LSB = 电流的LSB*25*/
+    fPower = regData * INA226_CALIB_VAL*25;/*功率的LSB = 电流的LSB*25*/
     return fPower;
 }
 
