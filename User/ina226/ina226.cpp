@@ -1,7 +1,9 @@
 //
 // Created by luxingyu on 2023/11/17.
+// 不知道为什么 INA226 实现得那么迷惑，明明读取总线电压和电阻电压就可以计算得结果，还要写寄存器
+// 不知道为什么读电流寄存器不准，而且在1A时调整 CAL 寄存器使得电流结果在1A ，2A时结果却不在2A？
+// 现在就不读电流寄存器了，直接读电压，自己算电流和功率
 //
-
 #include "ina226.h"
 
 #include "i2c.h"
@@ -35,7 +37,7 @@
 
 #define INA226_CURRENTLSB 1.0F // mA/bit
 #define INA226_CALIB_VAL 0x0a00
-
+#define SHUNT_R 0.002f
 
 #define INA226_CURRENTLSB_INV 1/INA226_CURRENTLSB // bit/mA
 #define INA226_POWERLSB_INV 1/(INA226_CURRENTLSB*25) // bit/mW
@@ -153,11 +155,11 @@ float INA226_GetBusV(void) {
 float INA226_GetCurrent() {
     uint16_t regData;
     float fCurrent;
-    regData = INA226_GetCurrentReg();
-    if (regData >= 0x8000) regData = 0;
-    fCurrent = (float )regData *(float)INA226_CURRENTLSB/2048.0f * INA226_CALIB_VAL;/*手册公式3*/
+    regData = INA226_GetShuntV();
+    fCurrent = (float )regData /SHUNT_R;/*手册公式3*/
     return fCurrent;
 }
+
 
 /*
 **************************************************

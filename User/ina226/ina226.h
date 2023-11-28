@@ -22,5 +22,5 @@ uint16_t INA226_GetBusVReg(void);
 uint16_t INA226_GetPowerReg(void);
 
 uint16_t INA226_GetCurrentReg(void);
-
+uint16_t INA226_GetShuntV();
 #endif //INA226_INA226_H
