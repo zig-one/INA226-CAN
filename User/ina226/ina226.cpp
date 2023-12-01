@@ -156,7 +156,8 @@ float INA226_GetCurrent() {
     uint16_t regData;
     float fCurrent;
     regData = INA226_GetShuntV();
-    fCurrent = (float )regData /SHUNT_R;/*手册公式3*/
+    fCurrent = (float )regData*25e-7 /SHUNT_R;/*手册公式3*/
+    fCurrent=(fCurrent-0.022)*0.963;
     return fCurrent;
 }
 

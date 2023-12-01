@@ -172,7 +172,9 @@ void User_Setup() {
 
 
 void User_Loop() {
-    current = INA226_GetCurrent();
+    float  current_lambda=0.1;
+
+    current = current_lambda*INA226_GetCurrent()+(1.0-current_lambda)*current;
     voltage = INA226_GetBusV();
     power = current * voltage;
 }
